@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home" class="home">Home</a></li>
+            <li><a href="#news">Over mij</a></li>
+            <li><a href="#contact">Projecten</a></li>
+            <li><a href="#about">Contact</a></li>
+            <li class="topnav-right"><a href="#signup">Sign up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+
+            <!-- hamburger menu-logo-->
+            <li class="dropdownIcon"><a onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Header -->
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftSide-col">
+                    <div class="pt-27">
+                        <h1 class="large">Crazy Radness</h1>
+                        <h1 class="large">Made for Developers</h1>
+                    </div>
+                </div>
+                <form>
+                    <div class="leftSide-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" name="username" type="text" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="password" type="text" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightSide-col">
+                    <div class="videoContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/n7JhRDRK3Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section2Header">Mijn Projecten</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="dev-icon.png" alt="dev-icon" width="110px" height="110px">
+                    </div>
+                    <label>Chat with Me</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="dev-icon.png" alt="dev-icon" width="110px" height="110px">
+                    </div>
+                    <label>Learn to Code</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="dev-icon.png" alt="dev-icon" width="110px" height="110px">
+                    </div>
+                    <label>Build an Empire</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!---->
+                <button class="learnMore">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="slopeIcon">
+                    <img src="iOS-Slope.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footsy">
+        <div class="row">
+            <div class="col-3">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h1>Products</h1>
+                <ul>
+                    <li>Computers</li>
+                    <li>iPads</li>
+                    <li>iPhones</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h1>Learn more</h1>
+                <ul>
+                    <li>Developers</li>
+                    <li>Designers</li>
+                    <li>Hackers</li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h1>Support</h1>
+                <ul>
+                    <li>Help</li>
+                    <li>QA</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById('dropdownClick');
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                console.log(x.className);
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav"
+                console.log(x.className);
+            }
+        }
+    </script>
+
+</body></html>
